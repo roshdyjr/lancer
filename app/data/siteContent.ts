@@ -1,3 +1,6 @@
+import Amar from "../../public/amar.jpg"
+import mohamed from "../../public/mohamed.jpg"
+import ahmed from "../../public/ahmed.jpg"
 export type SectionConfig = {
   label: string;
   href: `#${string}`;
@@ -183,9 +186,9 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const team: TeamMember[] = [
-  { name: "Eli Navarro", title: "Front-end Principal", focus: "Radiant UI systems & motion engineering" },
-  { name: "Noor Rahman", title: "Platform Architect", focus: "Distributed APIs & data choreography" },
-  { name: "Isa Marin", title: "Mobile Lead", focus: "React Native, native bridges, and sensor UX" },
+  { name: "Ahmed Rushdy", title: "Front-end engineer", focus:  "Design systems engineering & motion-driven interfaces" , photo:ahmed , portfolio: "https://ahmedrushdy.dev" },
+  { name: "Mohamed Emad", title: "Full Stack ", focus: "Backend services & real-time data pipelines" , photo:mohamed },
+  { name: "Amar Omar", title: "Front-end engineer", focus: "Responsive UI architecture , Accessibility-first developmen" , photo:Amar , protfolio: "https://amaromar.dev" },
 ];
 
 export const capacity: CapacityItem[] = [
