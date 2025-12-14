@@ -1,6 +1,6 @@
-import Amar from "../../public/amar.jpg"
-import mohamed from "../../public/mohamed.jpg"
-import ahmed from "../../public/ahmed.jpg"
+import Amar from "../../public/amar.jpg";
+import mohamed from "../../public/mohamed.jpg";
+import ahmed from "../../public/ahmed.jpg";
 export type SectionConfig = {
   label: string;
   href: `#${string}`;
@@ -55,7 +55,9 @@ export type TeamMember = {
   name: string;
   title: string;
   focus: string;
+  photo: string;
 };
+export default TeamMember
 
 export type CapacityItem = {
   label: string;
@@ -63,26 +65,86 @@ export type CapacityItem = {
 };
 
 export const navItems: SectionConfig[] = [
-  { label: "Overview", href: "#overview", tone: "from-emerald-400 via-cyan-400 to-blue-500", tag: "00" },
-  { label: "Capabilities", href: "#capabilities", tone: "from-fuchsia-500 via-pink-500 to-orange-400", tag: "01" },
-  { label: "Stacks", href: "#stacks", tone: "from-amber-400 via-lime-400 to-emerald-400", tag: "02" },
-  { label: "Process", href: "#process", tone: "from-sky-400 via-indigo-500 to-purple-500", tag: "03" },
-  { label: "Launches", href: "#launches", tone: "from-rose-400 via-orange-400 to-yellow-400", tag: "04" },
-  { label: "Voices", href: "#voices", tone: "from-cyan-400 via-blue-500 to-purple-500", tag: "05" },
-  { label: "Squad", href: "#squad", tone: "from-emerald-400 via-teal-400 to-cyan-500", tag: "06" },
-  { label: "Contact", href: "#contact", tone: "from-indigo-400 via-sky-400 to-cyan-500", tag: "07" },
+  {
+    label: "Overview",
+    href: "#overview",
+    tone: "from-emerald-400 via-cyan-400 to-blue-500",
+    tag: "00",
+  },
+  {
+    label: "Capabilities",
+    href: "#capabilities",
+    tone: "from-fuchsia-500 via-pink-500 to-orange-400",
+    tag: "01",
+  },
+  {
+    label: "Stacks",
+    href: "#stacks",
+    tone: "from-amber-400 via-lime-400 to-emerald-400",
+    tag: "02",
+  },
+  {
+    label: "Process",
+    href: "#process",
+    tone: "from-sky-400 via-indigo-500 to-purple-500",
+    tag: "03",
+  },
+  {
+    label: "Launches",
+    href: "#launches",
+    tone: "from-rose-400 via-orange-400 to-yellow-400",
+    tag: "04",
+  },
+  {
+    label: "Voices",
+    href: "#voices",
+    tone: "from-cyan-400 via-blue-500 to-purple-500",
+    tag: "05",
+  },
+  {
+    label: "Squad",
+    href: "#squad",
+    tone: "from-emerald-400 via-teal-400 to-cyan-500",
+    tag: "06",
+  },
+  {
+    label: "Contact",
+    href: "#contact",
+    tone: "from-indigo-400 via-sky-400 to-cyan-500",
+    tag: "07",
+  },
 ];
 
 export const stats: Stat[] = [
-  { label: "Multi-surface apps shipped", value: "68", accent: "text-emerald-300" },
-  { label: "Stack coverage", value: "FE / BE / Mobile", accent: "text-sky-300" },
+  {
+    label: "Multi-surface apps shipped",
+    value: "68",
+    accent: "text-emerald-300",
+  },
+  {
+    label: "Stack coverage",
+    value: "FE / BE / Mobile",
+    accent: "text-sky-300",
+  },
   { label: "Avg. release sprint", value: "18 days", accent: "text-yellow-300" },
 ];
 
 export const principles: Principle[] = [
-  { label: "Code x Narrative", detail: "Design and engineering review the same PR so UI stories and logic stay inseparable." },
-  { label: "Latency Matters", detail: "Budgets track perceived speed - profilers and RUM dashboards launch with every engagement." },
-  { label: "Pods Stay Embedded", detail: "Front-end, back-end, and mobile leads ride along until the release hits production traffic." },
+  {
+    label: "Code x Narrative",
+    detail:
+      "Design and engineering review the same PR so UI stories and logic stay inseparable.",
+  },
+  {
+    label: "Latency Matters",
+    detail:
+      "Budgets track perceived speed - profilers and RUM dashboards launch with every engagement.",
+  },
+  {
+    label: "Pods Stay Embedded",
+    detail:
+      "Front-end, back-end, and mobile leads ride along until the release hits production traffic.",
+  },
 ];
 
 export const capabilities: Capability[] = [
@@ -136,19 +198,23 @@ export const stacks: Stack[] = [
 export const process: ProcessStep[] = [
   {
     title: "Signal Sprint",
-    detail: "Discovery + code spike in 7 days: architecture decisions, risk list, and Figma-to-PR proof.",
+    detail:
+      "Discovery + code spike in 7 days: architecture decisions, risk list, and Figma-to-PR proof.",
   },
   {
     title: "Stack Choreography",
-    detail: "Pods pair program front-end, APIs, and mobile flows so feature flags hit every surface together.",
+    detail:
+      "Pods pair program front-end, APIs, and mobile flows so feature flags hit every surface together.",
   },
   {
     title: "Launch Theatre",
-    detail: "Motion previews, device labs, and observability drills rehearse the drop like a product premiere.",
+    detail:
+      "Motion previews, device labs, and observability drills rehearse the drop like a product premiere.",
   },
   {
     title: "Momentum Ops",
-    detail: "Experiment backlog, growth narratives, and platform hardening keep the ship tight post-launch.",
+    detail:
+      "Experiment backlog, growth narratives, and platform hardening keep the ship tight post-launch.",
   },
 ];
 
@@ -156,13 +222,15 @@ export const caseStudies: CaseStudy[] = [
   {
     client: "RelayForge",
     result: "+184% qualified demo volume",
-    description: "Unified React + RN component library, live data visualizations, and headless CMS marketing surface in 6 weeks.",
+    description:
+      "Unified React + RN component library, live data visualizations, and headless CMS marketing surface in 6 weeks.",
     palette: "from-sky-500/90 via-cyan-400/80 to-emerald-400/90",
   },
   {
     client: "MonarchOS",
     result: "Deployed 2.3M devices",
-    description: "Edge-ready Node platform, offline-first mobile suite, and animated onboarding across kiosk + mobile.",
+    description:
+      "Edge-ready Node platform, offline-first mobile suite, and animated onboarding across kiosk + mobile.",
     palette: "from-indigo-500/90 via-purple-500/80 to-pink-500/90",
   },
 ];
@@ -171,24 +239,42 @@ export const testimonials: Testimonial[] = [
   {
     name: "Sara Dunne",
     role: "VP Product, RelayForge",
-    quote: "Front-end and API engineers sat in the same design crit - they shipped a cohesive surface none of us imagined.",
+    quote:
+      "Front-end and API engineers sat in the same design crit - they shipped a cohesive surface none of us imagined.",
   },
   {
     name: "Leo Moretti",
     role: "CTO, MonarchOS",
-    quote: "Their pods understood embedded hardware constraints yet iterated like a startup. Deploy day was calm.",
+    quote:
+      "Their pods understood embedded hardware constraints yet iterated like a startup. Deploy day was calm.",
   },
   {
     name: "Camila Ortega",
     role: "Head of Design, Northbeam",
-    quote: "We finally have a design system that lives in Figma and in our monorepo without drift.",
+    quote:
+      "We finally have a design system that lives in Figma and in our monorepo without drift.",
   },
 ];
 
 export const team: TeamMember[] = [
-  { name: "Ahmed Rushdy", title: "Front-end engineer", focus:  "Design systems engineering & motion-driven interfaces" , photo:ahmed , portfolio: "https://ahmedrushdy.dev" },
-  { name: "Mohamed Emad", title: "Full Stack ", focus: "Backend services & real-time data pipelines" , photo:mohamed },
-  { name: "Amar Omar", title: "Front-end engineer", focus: "Responsive UI architecture , Accessibility-first developmen" , photo:Amar , protfolio: "https://amaromar.dev" },
+  {
+    name: "Ahmed Rushdy",
+    title: "Front-end engineer",
+    focus: "Design systems engineering & motion-driven interfaces",
+    photo: "/ahmed.jpg",
+  },
+  {
+    name: "Mohamed Emad",
+    title: "Full Stack",
+    focus: "Backend services & real-time data pipelines",
+    photo: "/mohamed.jpg",
+  },
+  {
+    name: "Amar Omar",
+    title: "Front-end engineer",
+    focus: "Responsive UI architecture, Accessibility-first development",
+    photo: "/amar.jpg",
+  },
 ];
 
 export const capacity: CapacityItem[] = [

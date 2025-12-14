@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { TeamMember } from "../data/siteContent";
+import TeamMember from "../data/siteContent";
 import { SectionHeading } from "./SectionHeading";
 import Image from "next/image";
 
