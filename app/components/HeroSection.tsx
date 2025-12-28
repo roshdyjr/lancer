@@ -10,7 +10,7 @@ export function HeroSection({ stats, principles }: { stats: Stat[]; principles: 
     >
       <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-8">
-          <p className="text-sm uppercase tracking-[0.4em] text-emerald-300">Aurora Lancer Engineering Studio</p>
+          <p className="text-sm uppercase tracking-[0.4em] text-emerald-300">RAM SW Development</p>
           <h1 className="heading-glow text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
             Freelance founders building luminous software across front-end, back-end, and mobile.
           </h1>

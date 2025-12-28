@@ -59,8 +59,7 @@ export default function Home() {
         </main>
 
         <footer className="mt-16 flex flex-wrap items-center justify-between border-t border-white/10 pt-8 text-sm text-slate-400">
-          <p>© {new Date().getFullYear()} Aurora Lancer • Remote-first full-stack team</p>
-          <p>Built with technicolor intention.</p>
+          <p>© {new Date().getFullYear()} RAM SW Development • Remote-first full-stack team</p>
         </footer>
       </div>
     </div>

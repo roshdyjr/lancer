@@ -33,7 +33,7 @@ export function ContactSection({ capacity }: { capacity: CapacityItem[] }) {
     <div className="mt-12 mx-auto max-w-2xl">
       {/* Email */}
       <a
-        href="mailto:medoem82950@gmail.com"
+        href="mailto:mohamed.emad82950@gmail.com"
         className="group relative flex items-center gap-6 rounded-3xl bg-white/95 p-6 transition-all hover:bg-white hover:scale-[1.02] hover:shadow-2xl hover:shadow-cyan-500/40 backdrop-blur-sm border border-white/20 overflow-hidden"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/0 via-cyan-400/0 to-blue-600/0 group-hover:from-emerald-400/5 group-hover:via-cyan-400/5 group-hover:to-blue-600/5 transition-all duration-500"></div>
@@ -57,7 +57,7 @@ export function ContactSection({ capacity }: { capacity: CapacityItem[] }) {
             Email us directly
           </div>
           <div className="text-base text-slate-700 group-hover:text-slate-900 mt-1 font-medium">
-            medoem82950@gmail.com
+            mohamed.emad82950@gmail.com
           </div>
         </div>
         <div className="relative h-8 w-8 rounded-full bg-slate-100 group-hover:bg-cyan-100 flex items-center justify-center transition-colors">
@@ -79,7 +79,7 @@ export function ContactSection({ capacity }: { capacity: CapacityItem[] }) {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/01125670497?text=Hi%20Aurora%20Lancer%20Team,%20I'd%20like%20to%20discuss%20a%20project"
+        href="https://wa.me/+201061122572?"
         target="_blank"
         rel="noopener noreferrer"
         className="group relative flex items-center gap-6 rounded-3xl bg-white/95 p-6 transition-all hover:bg-white hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/40 backdrop-blur-sm border border-white/20 overflow-hidden mt-6"
@@ -99,7 +99,7 @@ export function ContactSection({ capacity }: { capacity: CapacityItem[] }) {
             Chat on WhatsApp
           </div>
           <div className="text-base text-slate-700 group-hover:text-slate-900 mt-1 font-medium">
-            +20 112 567 0497
+            +201061122572
           </div>
         </div>
         <div className="relative h-8 w-8 rounded-full bg-slate-100 group-hover:bg-green-100 flex items-center justify-center transition-colors">
@@ -130,7 +130,7 @@ export function ContactSection({ capacity }: { capacity: CapacityItem[] }) {
         <span className="font-semibold text-slate-800">
           Average response:
         </span>
-        <span className="text-slate-700 font-medium">2 hours</span>
+        <span className="text-slate-700 font-medium">15 minutes</span>
       </div>
     </div>
   </div>
